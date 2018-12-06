@@ -137,29 +137,29 @@ describe('total likes', () => {
           __v: 0
         },
         {
-            _id: '5a422aa71b54a676234d17f8',
-            title: 'c',
-            author: 'cc',
-            url: 'www',
-            likes: 200,
-            __v: 0
-          },
-          {
-            _id: '5a422aa71b54a676234d17f8',
-            title: 'd',
-            author: 'dd',
-            url: 'www',
-            likes: 300,
-            __v: 0
-          },
-          {
-              _id: '5a422aa71b54a676234d17f8',
-              title: 'e',
-              author: 'ee',
-              url: 'www',
-              likes: 400,
-              __v: 0
-            }
+          _id: '5a422aa71b54a676234d17f8',
+          title: 'c',
+          author: 'cc',
+          url: 'www',
+          likes: 200,
+          __v: 0
+        },
+        {
+          _id: '5a422aa71b54a676234d17f8',
+          title: 'd',
+          author: 'dd',
+          url: 'www',
+          likes: 300,
+          __v: 0
+        },
+        {
+          _id: '5a422aa71b54a676234d17f8',
+          title: 'e',
+          author: 'ee',
+          url: 'www',
+          likes: 400,
+          __v: 0
+        }
       ]
   
     test('when list has no blogs equals 0', () => {

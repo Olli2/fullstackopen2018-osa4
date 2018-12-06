@@ -6,8 +6,5 @@ const Blog = mongoose.model('Blog', {
     url: String,
     likes: Number
   })
-  
-const mongoUrl = 'mongodb://user:pass@ds155663.mlab.com:55663/fullsdb'
-mongoose.connect(mongoUrl, { useNewUrlParser: true })
 
 module.exports = Blog
