@@ -9,6 +9,8 @@ const initialBlogs = [
     {title: 'b', author: 'bb', url: 'bbb', likes: 7}
 ]
 
+const oneBlog = {title: 'myblog', author: 'myname', url: 'myurl', likes: 100}
+
 beforeAll(async () => {
     await Blog.remove({})
   
@@ -34,6 +36,13 @@ test('all blogs are returned', async () => {
         .get('/api/blogs')
     expect(res.statusCode).toBe(200)
     expect(res.body.length).toBe(initialBlogs.length)
+})
+
+test('new blog is saved', async () => {
+    const res = await api
+        .post('/api/blogs')
+        .send(oneBlog)
+    expect(res.statusCode).toBe(201) 
 })
   
 afterAll(() => {
